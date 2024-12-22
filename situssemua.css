@@ -1,0 +1,405 @@
+/* ... CSS sebelumnya ... */
+
+.brand-section {
+    text-align: center;
+    margin-bottom: 40px; /* Jarak antara section brand dan daftar tim */
+    padding: 30px; 
+    border: 1px solid #ccc; /* Border */
+    border-radius: 15px; /* Border radius untuk persegi tumpul */
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #F2EAE2;
+  }
+  
+  .brand-section img { /* Sesuaikan ukuran logo */
+    width: 400px; 
+    max-width: 100%;  /* Lebar maksimum gambar 100% dari lebar parent-nya */
+    height: 250px; 
+    margin-bottom: 0px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+  }
+  
+  .brand-section h2 {
+    margin-bottom: 0; /* Menghilangkan margin bawah h2 */
+    margin-top: 0px;
+  }
+  
+  .brand-section h4 {
+    margin-top: 5px; /* Memberi margin atas kecil pada h4 */
+  }
+  
+  .brand-section p {
+    font-family: 'Garet', sans-serif; 
+    margin: auto;
+  }
+  
+  .team-container {
+      width: 80%;
+      margin: 0 auto;
+      text-align: center;
+  }
+  
+  .row {
+      display: flex;
+      justify-content: space-around;
+      margin-bottom: 20px;
+  }
+  
+  .member {
+    flex: 1; /* Member akan mengambil ruang yang tersedia */
+    margin: 0 10px; /* Memberikan sedikit jarak antar member */
+    border: 1px solid #ccc; /* Menambahkan border */
+    padding: 20px; /* Menambahkan padding */
+    border-radius: 7px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #F2EAE2;
+  }
+  
+  .member img {
+    width: 100px; /* Sesuaikan ukuran gambar sesuai kebutuhan */
+    height: 100px;
+    border-radius: 50%; /* Membuat gambar menjadi lingkaran */
+    object-fit: cover; /* Memastikan gambar menutupi seluruh area lingkaran */
+    transition: transform 0.3s ease;
+  }
+  
+  .member img:hover {
+    transform: scale(1.5); /* Gambar akan membesar 10% saat dihover */
+  }
+  
+  .member h3 {
+    margin-bottom: 0px; /* Atur jarak antara h3 dan p */
+  }
+  
+  .member p {
+    margin-top: 5px; /* Atur jarak di atas p */
+  }
+  
+  h4 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Starkiller', woff2; /* Ganti dengan nama font Anda */
+    font-size: 20px; 
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: 'Starkiller', woff2; /* Ganti dengan nama font Anda */
+    font-size: 50px; 
+  }
+  
+  h1 { /* Target h1 untuk "MEET MY TEAM" */
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 3em; /* Ubah ukuran font di sini */
+  }
+  
+  body {
+      font-family: 'Arial', sans-serif; /* Atau gunakan font yang mirip San Francisco */
+      margin: 0;
+      background-image: linear-gradient(to right, #a4b5c3, #eae0dc, #a4b5c3); /* Gradasi dari Tan ke Caput Mortuum */
+    }
+   
+    header {
+      background-color: #25344F; 
+      padding: 20px 0; 
+      color: #fff;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      z-index: 100;
+      height: 50px;
+  }
+  
+  .team-container {
+    margin-top: 100px; /* Sesuaikan nilai margin-top */
+  }
+  
+  .container {
+      max-width: 1200px; /* Batasi lebar maksimum konten */
+      margin: 0 auto; 
+      padding: 0 20px; 
+  }
+  
+  .logo img {
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Maintain aspect ratio */
+    border-radius: 45px;
+  }
+  
+  .logo { /* Targetkan kelas .logo secara langsung */
+    display: flex; /* Ubah .logo menjadi flex container */
+    align-items: center; /* Pusatkan logo secara vertikal di dalam .logo */
+  }
+  
+  #main-header .container {
+    display: flex;
+    justify-content: space-between; /* Untuk meratakan logo ke kiri dan navigasi ke kanan */
+    align-items: center; /* Untuk membuat logo dan tulisan sejajar secara vertikal */
+  }
+  
+  #main-nav ul {
+    list-style: none; /* Menghilangkan bullet point */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Mengubah tampilan menu menjadi flexbox */
+  justify-content: center; /* Meratakan item menu ke tengah */
+  width: 100%; /* Membuat navigasi memenuhi lebar container */
+  }
+  
+  #main-nav li {
+    margin: 0 10px; /* Memberi jarak antar item menu */
+  }
+  
+  
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    .airpods-section {
+      padding: 80px 0;
+      text-align: center;
+    }
+    
+    .airpods-section h1 {
+      font-size: 36px;
+      margin-bottom: 50px;
+    }
+    
+    .airpods-list {
+      display: flex; /* Gunakan flexbox untuk layout */
+      justify-content: space-between; /* Beri jarak antar produk */
+    }
+    
+    .airpods {
+      text-align: center;
+      width: 23%; /* Sesuaikan lebar produk */
+    }
+    
+    .airpods img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+    }
+    
+    .airpods h2 {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+    
+    .airpods p {
+      font-size: 14px;
+      line-height: 1.5;
+      margin-bottom: 20px;
+    }
+    
+    .back {
+      display: inline-block;
+      background-color: #0071e3; /* Warna biru khas Apple */
+      color: #fff;
+      padding: 15px 30px;
+      text-decoration: none;
+      border-radius: 50px;
+      margin: 0 10px; 
+      transition: background-color 0.3s ease; /* Tambahkan transisi */
+    }
+
+    .back:hover{
+      background-color: #d10f0f;
+    }
+
+    .button {
+      display: inline-block;
+      background-color: #6F4D38; /* Coffee */
+      color: #fff;
+      padding: 15px 30px;
+      text-decoration: none;
+      border-radius: 50px; 
+      margin: 0 10px; 
+      transition: background-color 0.3s ease; /* Tambahkan transisi */
+  }
+  
+  .button:hover {
+      background-color: #d5b893; /* Ubah warna saat hover */
+  }
+  
+    nav ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: center; 
+  }
+  
+  nav li {
+      display: inline-block; 
+      margin: 0 15px; 
+      position: relative; /* Tambahkan ini untuk memposisikan garis bawah */
+  }
+  
+  nav a {
+      text-decoration: none;
+      color: #fff; 
+      font-weight: bold; 
+      display: inline-block; /* Agar garis bawah sesuai dengan lebar teks */
+      padding-bottom: 5px; /* Tambahkan sedikit ruang di bawah teks untuk garis bawah */
+  }
+  
+  nav a::after { /* Pseudo-element untuk membuat garis bawah */
+      content: '';
+      position: absolute;
+      width: 0;
+      height: 2px;
+      background-color: #617891; /* Warna biru */
+      bottom: 0;
+      left: 0;
+      transition: width 0.3s ease; /* Animasi transisi */
+  }
+  
+  nav a:hover::after { 
+      width: 100%; /* Lebar garis bawah menjadi 100% saat dihover */
+  }
+  
+  /* tim.css */
+  
+  @font-face {
+    font-family: 'Starkiller'; /* Ganti dengan nama font Anda */
+    src: url('font/starkiller/Starkiller.ttf') format('woff2'), /* Ganti path dan nama file */
+         url('font/starkiller/Starkiller\ Italic.ttf') format('woff'),  /* Ganti path dan nama file */
+         url('font/starkiller/Starkiller\ Outline.ttf') format('truetype');  /* Ganti path dan nama file */
+  }
+  
+  @font-face {
+    font-family: 'Garet'; /* Ganti dengan nama font Anda */
+    src: url('font/Garet-Book.otf') format('woff2'), /* Ganti path dan nama file */
+         url('font/Garet-Book.ttf') format('woff'),  /* Ganti path dan nama file */
+         url('font/Garet-Heavy.ttf') format('truetype');  /* Ganti path dan nama file */
+  }
+  
+  .justify-text {
+    font-family: "Times New Roman", serif;
+    text-align: justify;
+    margin-bottom: 20px; /* Memberikan jarak 20px di bawah setiap paragraf */
+    padding-bottom: 10px; 
+    line-height: 1.5;
+    text-indent: 40px;
+  }
+
+  .foto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    display: flex;          /* Aktifkan flexbox */
+    align-items: center;    /* Sejajarkan item secara vertikal */
+    border: 1px solid #ccc; /* Menambahkan border */
+    border-radius: 15px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #F2EAE2;
+    
+  }
+  
+  .preview {
+    border-radius: 20px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #F2EAE2;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .preview img {
+    width: 400px; /* Sesuaikan lebar sesuai kebutuhan */
+    height: 300px; /* Sesuaikan tinggi sesuai kebutuhan */
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .arrow {
+    margin-bottom: 10px;
+  }
+  
+  .left {
+    text-align: left;
+  }
+  
+  .right {
+    text-align: right;
+  }
+  
+  .arrow button {
+    font-size: 24px;
+    padding: 5px 10px;
+    border-radius: 40px; 
+    border: 1px solid #ccc;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    background-color: #F2EAE2;
+     transition: background-color 0.3s ease; /* Tambahkan transisi */
+  }
+
+.arrow button:hover {
+    background-color: #d5b893; /* Ubah warna saat hover */
+}
+  
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); /* 3 kolom */
+    flex-wrap: wrap;
+    border-radius: 15px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    width: 100%; 
+    object-fit: cover;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .image-grid img {
+    width: 230px;
+    height: 150px;
+    cursor: pointer;
+    border-radius: 20px;
+    object-fit: cover;
+  }
+
+  .preview-and-arrows {
+    display: flex; /* Aktifkan flexbox */
+    align-items: center; /* Sejajarkan item secara vertikal */
+    gap: 10px;
+    margin: 0 10px;
+  }
+  
+  .footer {
+    background-color: #000; 
+    color: #fff; 
+    padding: 15px 0; 
+    text-align: center; 
+    clear: both;
+    position: relative; 
+    bottom: 0; 
+    width: 100%; 
+    height: 25px; /* Tambahkan ini untuk mengatur tinggi footer */
+    display: flex; /* Tambahkan ini */
+    align-items: center; /* Tambahkan ini */
+    justify-content: center; /* Tambahkan ini */
+  }
+  
+  .footer .container {
+    max-width: 960px; 
+  }
+  
+  .footer p {
+    font-size: 12px; 
+    line-height: 1.5;
+    margin: 0; 
+  }
+  
+  .footer a {
+    color: #999;
+    text-decoration: none; 
+  }

@@ -1,0 +1,296 @@
+/* cssutama.css */
+
+body {
+    font-family: 'Arial', sans-serif; 
+    margin: 0;
+    background-image: linear-gradient(to right, #a4b5c3, #eae0dc, #a4b5c3); /* Gradasi dari Tan ke Caput Mortuum */
+  }
+
+/* Header */
+header {
+    background-color: #25344F; 
+    padding: 20px 0; 
+    color: #eae0dc;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    height: 50px;
+}
+
+.container {
+    max-width: 1200px; 
+    margin: 0 auto; 
+    padding: 0 20px; 
+    width: 100%;
+}
+
+.logo img {
+    width: 50px; /* Adjust the width as needed */
+    height: 50px; /* Maintain aspect ratio */
+    border-radius: 45px;
+}
+
+.logo { /* Targetkan kelas .logo secara langsung */
+    display: flex; /* Ubah .logo menjadi flex container */
+    align-items: center; /* Pusatkan logo secara vertikal di dalam .logo */
+  }
+
+#main-header .container {
+    display: flex;
+    justify-content: space-between; /* Untuk meratakan logo ke kiri dan navigasi ke kanan */
+    align-items: center; /* Untuk membuat logo dan tulisan sejajar secara vertikal */
+  }
+  
+  #main-nav ul {
+    list-style: none; /* Menghilangkan bullet point */
+  margin: 0;
+  padding: 0;
+  display: flex; /* Mengubah tampilan menu menjadi flexbox */
+  justify-content: center; /* Meratakan item menu ke tengah */
+  width: 100%; /* Membuat navigasi memenuhi lebar container */
+  }
+  
+  #main-nav li {
+    margin: 0 10px; /* Memberi jarak antar item menu */
+  }
+
+
+.hero .slide img {
+  width: 100%;
+  height: 100vh; /* 100vh = 100% tinggi viewport */
+  object-fit: cover; /* Menutupi seluruh area dengan tetap menjaga rasio aspek */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; 
+}
+
+nav li {
+    display: inline-block; 
+    margin: 0 15px; 
+    position: relative; 
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff; 
+    font-weight: bold; 
+    display: inline-block; 
+    padding-bottom: 5px; 
+}
+
+nav a::after { 
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #617891; /* Slate Gray */
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease; 
+}
+
+nav a:hover::after { 
+    width: 100%; 
+}
+
+/* Hero Section */
+.hero {
+    position: relative;  
+    color: #fff; 
+    text-align: center; 
+    padding: 100px 0; 
+    margin-top: 50px; 
+    overflow: hidden; 
+    border-bottom: 2px solid #000000;
+}
+
+.hero h1 {
+    font-size: 48px; 
+    font-weight: bold;
+    margin-bottom: 20px; 
+    text-shadow: 
+    -1px -1px 0 #000,  /* Bayangan atas-kiri (warna gelap) */
+    1px 1px 0 #fff;   /* Bayangan bawah-kanan (warna terang) */
+}
+
+.hero p {
+    font-size: 20px;
+    line-height: 1.5;
+    margin-bottom: 30px; 
+    text-shadow: 
+    -0.5px -0.5px 0 #000,  /* Bayangan atas-kiri (warna gelap) */
+    0.5px 0.5px 0 #fff;
+}
+
+.button {
+    display: inline-block;
+    background-color: #6F4D38; /* Coffee */
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px; 
+    margin: 0 10px; 
+    transition: background-color 0.3s ease; /* Tambahkan transisi */
+}
+
+.button:hover {
+    background-color: #d5b893; /* Ubah warna saat hover */
+}
+
+
+/* Perbaikan di bagian slider */
+.slider {
+    display: flex;
+    transition: slide 20s linear infinite; /* Transisi yang smooth */
+    width: 200%; /* Lebar total slider (4 gambar * 100%) */
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    z-index: -1; 
+    opacity: 0.8; 
+    animation: slide 17.5s linear infinite; /* Durasi disesuaikan, tambahkan forwards */
+    border-bottom: 20px #000;
+}
+.slide {
+    width: 25%; /* Lebar setiap slide (100% / 4 gambar) */
+}
+
+.slide img {
+    display: block;
+    width: 100%; /* Gambar mengambil lebar penuh slide */
+    height: 100%;
+    object-fit: cover; 
+}
+
+@keyframes slide {
+    0% { margin-left: 0%; }
+    25% { margin-left: -25%; }
+    50% { margin-left: -50%; }
+    75% { margin-left: -75%; }
+    100% { margin-left: -100%; } /* Ubah ini */
+  }
+
+/* Footer */
+footer {
+    background-color: #eae0dc; /* Ganti dengan warna solid */ 
+    padding: 50px 0; 
+    text-align: center;
+    border-top: 20px #d39e89 ;
+}
+
+footer .column {
+    width: calc(100% / 6);
+    display: inline-block; /* Ubah float menjadi inline-block */
+    padding: 0 20px; 
+    text-align: center; /* Pusatkan teks di dalam kolom */
+    vertical-align: top; /* Sejajarkan kolom ke atas */
+  }
+
+footer h3 {
+    color: #333;
+    margin-bottom: 20px; 
+}
+
+footer ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+footer li {
+    margin-bottom: 10px; 
+}
+
+footer a {
+    text-decoration: none;
+    color: #666; 
+}
+
+footer a:hover {
+    text-decoration: underline; /* Tambahkan garis bawah saat hover */
+  }
+
+.footer-bottom {
+    background-color: #000; 
+    color: #fff; 
+    padding: 15px 0; 
+    text-align: center; 
+    clear: both;
+    position: relative; /* Tambahkan ini */
+    bottom: 0; /* Tambahkan ini */
+    width: 100%; /* Tambahkan ini */
+}
+
+.footer-bottom .container {
+    max-width: 960px; 
+}
+
+.footer-bottom p {
+    font-size: 12px; 
+    line-height: 1.5;
+    margin: 0; 
+}
+
+.footer-bottom a {
+    color: #999;
+    text-decoration: none; 
+}
+
+.fade-in {
+    animation: fadeIn 1s ease-in-out; /* Durasi animasi 1 detik */
+  }
+  
+  @keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+  }
+  
+  .zoom-in {
+    animation: zoomIn 1s ease-in-out; /* Durasi animasi 1 detik */
+  }
+  
+  @keyframes zoomIn {
+    0% { 
+      transform: scale(0.8); 
+      opacity: 0; 
+    }
+    100% { 
+      transform: scale(1); 
+      opacity: 1; 
+    }
+  }
+
+.referensi-section {
+    padding: 80px 0; 
+    margin-top: 10px; /* Tambahkan ini */
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.referensi-item {
+    padding: 20px;
+    margin-bottom: 20px; /* Jarak antar item */
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
+    text-align: center; /* Tambahkan ini */
+}
+
+.referensi-item p {
+    font-size: 16px; /* Ukuran font */
+    line-height: 1.5; /* Spasi baris */
+}
+
+.referensi-item i { /* Style untuk judul buku/jurnal */
+    font-style: italic;
+}

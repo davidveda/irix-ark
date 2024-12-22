@@ -1,0 +1,176 @@
+.video-section {
+    padding: 80px 0;
+    margin-top: 50px; /* Tambahkan margin-top di sini */
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .video-item {
+    width: 100%; 
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    display: flex; 
+    align-items: center; 
+    margin-bottom: 20px; 
+    overflow: hidden; /* Ini yang penting! */
+    background-color: #F2EAE2;
+  }
+  
+  .video-content {
+    flex: 2;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  
+  .video-item img {
+    flex: 1;
+    width: 100%;
+    height: 200px;
+    padding: 20px;
+    border-radius: 30px;
+    object-fit: cover; 
+    order: 1; /* Pindahkan gambar ke sebelah kiri untuk semua item */
+  }
+  
+  .button {
+    display: inline-block;
+    background-color: #6F4D38; /* Coffee */
+    color: #fff;
+    padding: 15px 30px;
+    text-decoration: none;
+    border-radius: 50px; 
+    margin: 0 10px; 
+    transition: background-color 0.3s ease; /* Tambahkan transisi */
+}
+
+.button:hover {
+    background-color: #d5b893; /* Ubah warna saat hover */
+}
+
+  body {
+    font-family: 'Arial', sans-serif; /*  Gunakan font yang mirip Apple seperti San Francisco, jika punya */
+    margin: 0;
+    background-image: linear-gradient(to right, #a4b5c3, #eae0dc, #a4b5c3); /* Gradasi dari Tan ke Caput Mortuum */
+}
+
+  /* Header */
+header {
+    background-color: #25344F; 
+    padding: 20px 0; 
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+    height: 50px;
+}
+
+.container {
+    max-width: 1200px; /* Batasi lebar maksimum konten */
+    margin: 0 auto; 
+    padding: 0 20px; 
+}
+
+.logo img {
+  width: 50px; /* Adjust the width as needed */
+  height: 50px; /* Maintain aspect ratio */
+  border-radius: 45px;
+}
+
+.logo { /* Targetkan kelas .logo secara langsung */
+  display: flex; /* Ubah .logo menjadi flex container */
+  align-items: center; /* Pusatkan logo secara vertikal di dalam .logo */
+}
+
+#main-header .container {
+  display: flex;
+  justify-content: space-between; /* Untuk meratakan logo ke kiri dan navigasi ke kanan */
+  align-items: center; /* Untuk membuat logo dan tulisan sejajar secara vertikal */
+}
+
+#main-nav ul {
+  list-style: none; /* Menghilangkan bullet point */
+margin: 0;
+padding: 0;
+display: flex; /* Mengubah tampilan menu menjadi flexbox */
+justify-content: center; /* Meratakan item menu ke tengah */
+width: 100%; /* Membuat navigasi memenuhi lebar container */
+}
+
+#main-nav li {
+  margin: 0 10px; /* Memberi jarak antar item menu */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center; 
+}
+
+nav li {
+    display: inline-block; 
+    margin: 0 15px; 
+    position: relative; /* Tambahkan ini untuk memposisikan garis bawah */
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff; 
+    font-weight: bold; 
+    display: inline-block; /* Agar garis bawah sesuai dengan lebar teks */
+    padding-bottom: 5px; /* Tambahkan sedikit ruang di bawah teks untuk garis bawah */
+}
+
+nav a::after { /* Pseudo-element untuk membuat garis bawah */
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background-color: #617891; /* Warna biru */
+    bottom: 0;
+    left: 0;
+    transition: width 0.3s ease; /* Animasi transisi */
+}
+
+nav a:hover::after { 
+    width: 100%; /* Lebar garis bawah menjadi 100% saat dihover */
+}
+
+.footer {
+  background-color: #000; 
+  color: #fff; 
+  padding: 15px 0; 
+  text-align: center; 
+  clear: both;
+  position: relative; 
+  bottom: 0; 
+  width: 100%; 
+  height: 25px; /* Tambahkan ini untuk mengatur tinggi footer */
+  display: flex; /* Tambahkan ini */
+  align-items: center; /* Tambahkan ini */
+  justify-content: center; /* Tambahkan ini */
+}
+
+.footer .container {
+  max-width: 960px; 
+}
+
+.footer p {
+  font-size: 12px; 
+  line-height: 1.5;
+  margin: 0; 
+}
+
+.footer a {
+  color: #999;
+  text-decoration: none; 
+}
